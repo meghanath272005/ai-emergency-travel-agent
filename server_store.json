@@ -1,0 +1,493 @@
+{
+  "server_version": "2.4.0",
+  "server_vector_clock": {
+    "server": 103,
+    "test_client": 1,
+    "test_curl": 1
+  },
+  "last_updated": 1789110407205,
+  "stations": [
+    {
+      "code": "NDLS",
+      "name": "New Delhi Central",
+      "zone": "NR",
+      "lat": 28.6427,
+      "lon": 77.2195,
+      "platforms": 16
+    },
+    {
+      "code": "BCT",
+      "name": "Mumbai Central",
+      "zone": "WR",
+      "lat": 18.9696,
+      "lon": 72.8193,
+      "platforms": 9
+    },
+    {
+      "code": "SBC",
+      "name": "KSR Bengaluru City",
+      "zone": "SWR",
+      "lat": 12.9784,
+      "lon": 77.5695,
+      "platforms": 10
+    },
+    {
+      "code": "HWH",
+      "name": "Howrah Junction Kolkata",
+      "zone": "ER",
+      "lat": 22.5839,
+      "lon": 88.3426,
+      "platforms": 23
+    },
+    {
+      "code": "MAS",
+      "name": "Chennai Central",
+      "zone": "SR",
+      "lat": 13.0827,
+      "lon": 80.2755,
+      "platforms": 12
+    },
+    {
+      "code": "KOTA",
+      "name": "Kota Junction",
+      "zone": "WCR",
+      "lat": 25.2138,
+      "lon": 75.8648,
+      "platforms": 6
+    },
+    {
+      "code": "BPL",
+      "name": "Bhopal Junction",
+      "zone": "WCR",
+      "lat": 23.2599,
+      "lon": 77.4126,
+      "platforms": 6
+    },
+    {
+      "code": "CNB",
+      "name": "Kanpur Central",
+      "zone": "NCR",
+      "lat": 26.4547,
+      "lon": 80.3507,
+      "platforms": 10
+    },
+    {
+      "code": "BSB",
+      "name": "Varanasi Junction",
+      "zone": "NER",
+      "lat": 25.3283,
+      "lon": 82.9866,
+      "platforms": 9
+    }
+  ],
+  "trains": [
+    {
+      "id": "12952",
+      "name": "Mumbai Tejas Rajdhani",
+      "type": "Superfast Premium",
+      "from_code": "NDLS",
+      "to_code": "BCT",
+      "departure": "16:55",
+      "arrival": "08:35",
+      "duration": "15h 40m",
+      "speed_kmh": 130,
+      "punctuality_pct": 98.4,
+      "classes": {
+        "1A": {
+          "available": 4,
+          "waitlist": 0,
+          "fare": 4650,
+          "status": "AVAILABLE-04",
+          "conf_prob": 100
+        },
+        "2A": {
+          "available": 17,
+          "waitlist": 0,
+          "fare": 2980,
+          "status": "AVAILABLE-17",
+          "conf_prob": 100
+        },
+        "3A": {
+          "available": 0,
+          "waitlist": 12,
+          "fare": 2180,
+          "status": "WL-12",
+          "conf_prob": 74
+        }
+      },
+      "route_stops": [
+        "NDLS",
+        "KOTA",
+        "RTM",
+        "BRC",
+        "ST",
+        "BVI",
+        "BCT"
+      ],
+      "tatkal_open": true,
+      "dynamic_pricing_factor": 1.15
+    },
+    {
+      "id": "22436",
+      "name": "Vande Bharat Express",
+      "type": "Semi-High Speed",
+      "from_code": "NDLS",
+      "to_code": "BSB",
+      "departure": "06:00",
+      "arrival": "14:00",
+      "duration": "8h 00m",
+      "speed_kmh": 160,
+      "punctuality_pct": 99.1,
+      "classes": {
+        "EC": {
+          "available": 8,
+          "waitlist": 0,
+          "fare": 3350,
+          "status": "AVAILABLE-08",
+          "conf_prob": 100
+        },
+        "CC": {
+          "available": 34,
+          "waitlist": 0,
+          "fare": 1750,
+          "status": "AVAILABLE-34",
+          "conf_prob": 100
+        }
+      },
+      "route_stops": [
+        "NDLS",
+        "CNB",
+        "PRYJ",
+        "BSB"
+      ],
+      "tatkal_open": true,
+      "dynamic_pricing_factor": 1.0
+    },
+    {
+      "id": "12302",
+      "name": "Howrah Rajdhani Express",
+      "type": "Superfast Premium",
+      "from_code": "NDLS",
+      "to_code": "HWH",
+      "departure": "16:50",
+      "arrival": "09:55",
+      "duration": "17h 05m",
+      "speed_kmh": 130,
+      "punctuality_pct": 96.8,
+      "classes": {
+        "1A": {
+          "available": 2,
+          "waitlist": 0,
+          "fare": 4820,
+          "status": "AVAILABLE-02",
+          "conf_prob": 100
+        },
+        "2A": {
+          "available": 0,
+          "waitlist": 8,
+          "fare": 3050,
+          "status": "WL-08",
+          "conf_prob": 82
+        },
+        "3A": {
+          "available": 0,
+          "waitlist": 24,
+          "fare": 2240,
+          "status": "WL-24",
+          "conf_prob": 58
+        }
+      },
+      "route_stops": [
+        "NDLS",
+        "CNB",
+        "DDU",
+        "GAYA",
+        "DHN",
+        "HWH"
+      ],
+      "tatkal_open": true,
+      "dynamic_pricing_factor": 1.2
+    },
+    {
+      "id": "12626",
+      "name": "Kerala Superfast Express",
+      "type": "Long Distance Superfast",
+      "from_code": "NDLS",
+      "to_code": "MAS",
+      "departure": "20:10",
+      "arrival": "04:45",
+      "duration": "32h 35m",
+      "speed_kmh": 110,
+      "punctuality_pct": 94.2,
+      "classes": {
+        "2A": {
+          "available": 6,
+          "waitlist": 0,
+          "fare": 3120,
+          "status": "AVAILABLE-06",
+          "conf_prob": 100
+        },
+        "3A": {
+          "available": 22,
+          "waitlist": 0,
+          "fare": 2180,
+          "status": "AVAILABLE-22",
+          "conf_prob": 100
+        },
+        "SL": {
+          "available": 0,
+          "waitlist": 45,
+          "fare": 820,
+          "status": "WL-45",
+          "conf_prob": 42
+        }
+      },
+      "route_stops": [
+        "NDLS",
+        "AGC",
+        "GWL",
+        "BPL",
+        "NGP",
+        "BZA",
+        "MAS"
+      ],
+      "tatkal_open": false,
+      "dynamic_pricing_factor": 1.05
+    },
+    {
+      "id": "12954",
+      "name": "August Kranti Tejas Rajdhani",
+      "type": "Superfast Premium",
+      "from_code": "NDLS",
+      "to_code": "BCT",
+      "departure": "17:15",
+      "arrival": "10:05",
+      "duration": "16h 50m",
+      "speed_kmh": 125,
+      "punctuality_pct": 97.2,
+      "classes": {
+        "1A": {
+          "available": 1,
+          "waitlist": 0,
+          "fare": 4650,
+          "status": "AVAILABLE-01",
+          "conf_prob": 100
+        },
+        "2A": {
+          "available": 12,
+          "waitlist": 0,
+          "fare": 2980,
+          "status": "AVAILABLE-12",
+          "conf_prob": 100
+        },
+        "3A": {
+          "available": 5,
+          "waitlist": 0,
+          "fare": 2180,
+          "status": "AVAILABLE-05",
+          "conf_prob": 98
+        }
+      },
+      "route_stops": [
+        "NDLS",
+        "MTJ",
+        "KOTA",
+        "RTM",
+        "ST",
+        "BCT"
+      ],
+      "tatkal_open": true,
+      "dynamic_pricing_factor": 1.1
+    },
+    {
+      "id": "12002",
+      "name": "Bhopal Shatabdi Express",
+      "type": "Shatabdi Express",
+      "from_code": "NDLS",
+      "to_code": "BPL",
+      "departure": "06:00",
+      "arrival": "14:40",
+      "duration": "8h 40m",
+      "speed_kmh": 150,
+      "punctuality_pct": 98.9,
+      "classes": {
+        "EC": {
+          "available": 14,
+          "waitlist": 0,
+          "fare": 2690,
+          "status": "AVAILABLE-14",
+          "conf_prob": 100
+        },
+        "CC": {
+          "available": 62,
+          "waitlist": 0,
+          "fare": 1420,
+          "status": "AVAILABLE-62",
+          "conf_prob": 100
+        }
+      },
+      "route_stops": [
+        "NDLS",
+        "AGC",
+        "GWL",
+        "JHS",
+        "BPL"
+      ],
+      "tatkal_open": true,
+      "dynamic_pricing_factor": 1.0
+    }
+  ],
+  "bookings": [
+    {
+      "pnr": "A10-0167150",
+      "train_id": "12952",
+      "train_name": "Mumbai Tejas Rajdhani",
+      "from_code": "NDLS",
+      "to_code": "BCT",
+      "date": "2026-09-22",
+      "travel_class": "2A",
+      "passengers": [
+        {
+          "name": "Major Roy",
+          "age": 30,
+          "gender": "M",
+          "berth": "B1-22 (Lower)",
+          "status": "CNF / B1-22 (Lower)",
+          "quota": "GN"
+        }
+      ],
+      "current_status": "CNF / B1-22 (Lower)",
+      "booking_status": "CNF / B1-22 (Lower)",
+      "chart_prepared": false,
+      "conf_prob": 100,
+      "fare": 2980,
+      "timestamp": 1789110167150,
+      "vector_clock": {
+        "server": 103
+      }
+    },
+    {
+      "pnr": "241-8930129",
+      "train_id": "12952",
+      "train_name": "Mumbai Tejas Rajdhani",
+      "from_code": "NDLS",
+      "to_code": "BCT",
+      "date": "2026-09-18",
+      "travel_class": "2A",
+      "passengers": [
+        {
+          "name": "Dr. Sarah Vance",
+          "age": 34,
+          "gender": "F",
+          "berth": "B1-21 (Lower)",
+          "status": "CNF",
+          "quota": "GN"
+        }
+      ],
+      "current_status": "CNF / B1-21",
+      "booking_status": "WL-4",
+      "chart_prepared": false,
+      "conf_prob": 100,
+      "fare": 2980,
+      "timestamp": 1789023764756,
+      "vector_clock": {
+        "server": 95
+      }
+    },
+    {
+      "pnr": "482-1094821",
+      "train_id": "12302",
+      "train_name": "Howrah Rajdhani Express",
+      "from_code": "NDLS",
+      "to_code": "HWH",
+      "date": "2026-09-20",
+      "travel_class": "3A",
+      "passengers": [
+        {
+          "name": "Vikram Malhotra",
+          "age": 42,
+          "gender": "M",
+          "berth": "B4-42 (Side Lower)",
+          "status": "WL-4",
+          "quota": "GN"
+        }
+      ],
+      "current_status": "WL-4 (RLWL)",
+      "booking_status": "WL-8",
+      "chart_prepared": false,
+      "conf_prob": 87,
+      "fare": 2240,
+      "timestamp": 1789066964756,
+      "vector_clock": {
+        "server": 98
+      }
+    }
+  ],
+  "irctc_rules": [
+    {
+      "id": "IRCTC-RLWL-204",
+      "policy_class": "WAITLIST_RULE",
+      "title": "Remote Location Waitlist (RLWL) Priority Protocol",
+      "description": "RLWL tickets are prioritized behind General Waitlist (GNWL) during charting. Intermediate boarding quotas strictly enforced.",
+      "enforced": true,
+      "risk_level": "MODERATE",
+      "throttle_limit": "50 req/min"
+    },
+    {
+      "id": "IRCTC-TATKAL-1000",
+      "policy_class": "TATKAL_AUTO_BOOK",
+      "title": "Tatkal 10:00 AM AC Quota Locking Window",
+      "description": "Automated sub-second lock enabled at 10:00:00 AM IST for AC classes. Anti-bot OTP bypass defense active.",
+      "enforced": true,
+      "risk_level": "HIGH",
+      "throttle_limit": "20 req/min"
+    },
+    {
+      "id": "IRCTC-DYNFARE-303",
+      "policy_class": "DYNAMIC_FARE_MAX",
+      "title": "Dynamic Fare Surge Cap (1.5x Base)",
+      "description": "SuFast and Rajdhani premium surcharge capped at 150% of base fare. Quota slabs of 10% determine increment.",
+      "enforced": true,
+      "risk_level": "LOW",
+      "throttle_limit": "UNLIMITED"
+    },
+    {
+      "id": "IRCTC-RAC-109",
+      "policy_class": "RAC_REGULATION",
+      "title": "Reservation Against Cancellation Berth Sharing",
+      "description": "RAC passengers share Side Lower berths. 100% chart preparation guarantee for RAC <= 12.",
+      "enforced": true,
+      "risk_level": "LOW",
+      "throttle_limit": "UNLIMITED"
+    },
+    {
+      "id": "IRCTC-CANC-501",
+      "policy_class": "REFUND_MATRIX",
+      "title": "TDR & Auto-Cancellation Refund SLA",
+      "description": "Waitlisted e-tickets auto-cancel after chart prep with 100% refund credited within 3-5 bank clearing cycles.",
+      "enforced": true,
+      "risk_level": "INFO",
+      "throttle_limit": "UNLIMITED"
+    }
+  ],
+  "agent_dispatch_logs": [
+    {
+      "id": "DSP-84920",
+      "agent": "ADK-Transit-Supervisor-Alpha",
+      "intent": "Route Optimization NDLS -> BCT",
+      "decision": "Bypass GNWL WL-12 via Kota multi-hop split ticketing (Save 3h wait)",
+      "confidence": 0.96,
+      "latency_ms": 28,
+      "timestamp": 1789106564756
+    },
+    {
+      "id": "DSP-84921",
+      "agent": "ADK-Quota-Protector",
+      "intent": "Tatkal Pre-allocation 22436 Vande Bharat",
+      "decision": "Pre-warmed captive session pool for 10:00:00 AM IST release",
+      "confidence": 0.99,
+      "latency_ms": 14,
+      "timestamp": 1789108364756
+    }
+  ]
+}

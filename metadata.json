@@ -1,0 +1,6 @@
+{
+  "name": "Mission-Critical Neural Transit",
+  "description": "Mission-critical AI-driven railway transit intelligence platform with autonomous ADK dispatch supervisor, IRCTC compliance matrix, offline access, and Python data synchronization engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
